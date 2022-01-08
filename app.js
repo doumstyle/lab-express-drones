@@ -23,6 +23,7 @@ const projectName = 'lab-express-drones';
 const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
 app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+hbs.registerPartials(__dirname + '/views/partials');
 
 // 👇 Start handling routes here
 const index = require('./routes/index');

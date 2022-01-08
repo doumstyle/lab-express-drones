@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    {{#each css}}
+      <link rel="stylesheet" href="/stylesheets/{{this}}.css" />
+    {{/each}}
   </head>
 
   <body>
-
+    {{> navbar}}
     {{{body}}}
 
     <script src="/js/script.js"></script>
