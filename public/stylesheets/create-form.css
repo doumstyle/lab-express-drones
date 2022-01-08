@@ -1,0 +1,33 @@
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100vw;
+    justify-items: center;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    background: #fff;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 3px 10px limegreen;
+  }
+  
+  form > label {
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  
+  form > button {
+    font-size: 1.5em;
+    padding: 2em;
+    background-color: dodgerblue;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .full-width {
+    grid-column: 1 / 3;
+  }

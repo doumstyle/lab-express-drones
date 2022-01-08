@@ -13,6 +13,7 @@ router.get('/drones', (req, res, next) => {
       res.render("drones/list.hbs", {
         drones: dbRes,
         css: ["drones", "style"],
+        image: 'https://iconape.com/wp-content/png_logo_vector/stark-industries-logo.png'
       });
     })
     .catch(err => console.error(err));
@@ -20,7 +21,10 @@ router.get('/drones', (req, res, next) => {
 
 router.get('/drones/create', (req, res, next) => {
   // Iteration #3: Add a new drone
-  res.render("drones/create-form.hbs")
+  res.render("drones/create-form.hbs", {
+    css: ['style', 'create-form'],
+    image: 'https://iconape.com/wp-content/png_logo_vector/stark-industries-logo.png'
+  })
 });
 
 router.post('/drones/create', (req, res, next) => {
@@ -43,6 +47,8 @@ router.get('/drones/:id/edit', (req, res, next) => {
     .then(foundDrone => {
       res.render("drones/update-form.hbs", {
         drone: foundDrone,
+        css: ['style', 'create-form'],
+        image: 'https://iconape.com/wp-content/png_logo_vector/stark-industries-logo.png'
       });
     })
     .catch(err => console.error(err));

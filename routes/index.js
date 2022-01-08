@@ -5,6 +5,7 @@ const router = express.Router();
 router.get("/", (req, res, next) => {
     res.render("index", {
         css: ['style'],
+        image: 'https://iconape.com/wp-content/png_logo_vector/stark-industries-logo.png',
     })
 });
 

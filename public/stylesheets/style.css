@@ -8,30 +8,40 @@ body {
 
 .navbar {
   display: grid;
-  background-color: #333;
+  background-color: limegreen;
   padding: 1em;
   grid-template-rows: auto;
-  grid-template-columns: repeat(3, 1fr 1fr 2fr auto);
+  grid-template-columns: 300px 60px 70px 140px;
+  grid-gap: 0.5em;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 3em;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #fff;
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 600;
 }
 
 .container {
   display: grid;
-  grid-template-rows: repeat(14, 1fr);
   margin: 1em;
   justify-content: center;
+  height: 80vh;
+  align-items: end;
 }
 
 .container a {
   background-color: limegreen;
-  padding: 1em;
+  padding: 1.2em;
   text-decoration: none;
-  color: #fff;
-  border-radius: 2em;
+  color: #000;
+  border-radius: 1em;
   display: grid;
   grid-row: 13;
+  font-size: 1.3em;
+  font-weight: 600;
 }
+
